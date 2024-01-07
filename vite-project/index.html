@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <header>
+      <h1>Blog Title</h1>
+      <input type="text" placeholder="Search..." id="searchBar" />
+      <button onclick="">Search</button>
+    </header>
+
+    <div class="container">
+      <div class="post">
+        <h2>Post Title</h2>
+        <p>Content of the post goes here.</p>
+        <p>Likes: <span id="postLikes">0</span> - Date: January 1, 2024</p>
+
+        <div class="comment">
+          <h3>Comments</h3>
+          <div class="single-comment">
+            <p>
+              <strong>Author Name</strong> - Likes:
+              <span class="commentLikes">0</span> - Date: January 2, 2024
+            </p>
+            <p>This is a comment under the post.</p>
+          </div>
+          <!-- Other comments can go here -->
+        </div>
+      </div>
+      <form id="postForm">
+        <h3>Write a New Post</h3>
+        <input type="text" placeholder="Your Title" id="postTitleName" />
+        <textarea
+          placeholder="Write here..."
+          id="postContent"
+          rows="4"
+        ></textarea>
+        <button type="submit">Post</button>
+      </form>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>

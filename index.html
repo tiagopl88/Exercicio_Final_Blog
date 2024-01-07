@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>O MEU BLOG</title>
+  </head>
+  <body>
+    <header>
+      <h1>O MEU BLOG</h1>
+      <input type="text" placeholder="" id="searchBar" />
+      <button id="search-button" onclick="searchPost()" type="submit">
+        Pesquisar
+      </button>
+    </header>
+    <div>
+      <form id="postForm">
+        <input type="text" placeholder="Título" id="postTitle" />
+        <textarea placeholder="Texto" id="postContent"></textarea>
+        <button type="submit">Submeter</button>
+      </form>
+    </div>
+    <div class="container" id="container"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
